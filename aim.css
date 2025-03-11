@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=42dot+Sans:wght@300..800&display=swap');
+
+
+body{
+    box-sizing: border-box;
+    margin:0;
+}
+
+/*에임 로고*/
+.aimImg img{
+    width: 400px;
+    margin:auto;
+    margin-top:200px;
+    margin-bottom: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 팀장 소개 */
+.leader{
+    width:1000px;
+    height:600px;
+    padding-top:30px;
+    margin:auto;
+    margin-bottom: 300px;
+    text-align:center;
+    background-color: #F2F2F2;
+    border-radius: 40px;
+}
+.leader h1{
+    font-size:50px;
+}
+.leader img{
+    float:left;
+    margin: 15px;
+    margin-left:150px;
+    width:150px;
+    height:200px;
+    border:1px solid rgb(164, 154, 154);
+}
+.leaderDetail{
+    float:left;
+    font-size:30px;
+    text-align: left;
+    font-weight:bold;
+    margin-left: 100px;
+}
+
+
+
+/* 팀원 소개 */
+.member{
+    height:1000px;
+    margin:auto;
+    background-color: #F2F2F2;
+    padding-bottom: 300px;
+    clear:left;
+}
+.member h1{
+    padding-top:200px;
+    padding-bottom: 50px;
+    margin:0;
+    text-align: center;
+    font-size: 50px;
+}
+.studentInfo{
+    width:1200px;
+    height: 700px;
+    margin:auto;
+    display: grid;
+    text-align: center;
+    grid-template-areas: 
+        "student1 student2"
+        "student3 student4";
+    font-family: "42dot Sans", sans-serif;
+    font-weight:bold;
+}
+.grid-item img{
+    float:left;
+    margin: 15px;
+    width:150px;
+    height:200px;
+    border:1px solid rgb(164, 154, 154);
+}
+.studentName{
+    font-size: 30px;
+}
+.memberDetail{
+    width:200px;
+    height:200px;
+    margin:15px;
+    font-size:30px;
+    text-align: left;
+    margin-left: 15px;
+    float:left;
+}
+
+
+/* 신입기수 계획 */
+.PLANS{
+    height:2000px;
+    margin:0;
+    padding:200px;
+    background-color: black;
+    color:white;
+    text-align:center;
+
+}
+
+.PLANS h1{
+    font-size:50px;
+    margin-bottom:150px;
+}
+.plan{
+    margin:100px;
+}
+.plan h1{
+    font-size:40px;
+    margin:0;
+}
+.plan p{
+    font-size: 40px;
+    font-weight:bold;
+}
+.planDetail p{
+    font-size: 30px;
+}
+
+
+/* 모집 */
+.recruit{
+    margin-top: 400px;
+}
+.recruit h1{
+    margin-bottom: 80px;
+}
+.recruit p{
+    font-size:30px;
+    font-weight:bold;
+}
+
+
+
+.recruitbutton{
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+
+
+
+
+
+
+/*버튼 디자인*/
+.recruitbutton{
+    background-color: rgb(0, 51, 255);
+    color: white;
+    border: none;
+    border-radius: 34px;
+    font-size: 18px;
+    padding: 20px;
+}
+
+.recruitbutton:hover{
+    opacity: 0.3;
+}
+
+#recruitIcon{
+    width: 60px;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+
+
+
+@media screen and (min-width: 810px) {
+    .benefitIcon > div {
+    flex-basis: calc(25% - 20px);
+}
+}
+
+@media screen and (max-width: 809) {
+.benefitIcon > div {
+    flex-basis: calc(50% - 20px);
+    }
+}       
+
+@media screen and (max-width: 500px) {
+    .benefitIcon{
+        flex-direction: column;
+    }
+    .benefitIcon > div {
+        width: 100%;
+    }
+}
+
